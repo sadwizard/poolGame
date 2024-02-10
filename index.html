@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Game</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/victor/1.1.0/victor.min.js" integrity="sha512-95CHLV2JB3ympqgc+wIbh0pTwobPqIfF31hZ97gbaTeigAUgIXJnux7uzcfB86nlzXcMM8tMoj8tdrYgTZF9vA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./constants.js"></script>
+    <script src="./FpsCounter.js"></script>
+    <script src="./BodyRenderer.js"></script>
+    <script src="./BodyUpdater.js"></script>
+    <script src="./BodyBuilder.js"></script>
+    <script src="./CollisionObserver.js"></script>
+    <script src="./Drawer.js"></script>
+    <script src="./objects.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        var game = new PoolGame();
+
+        game.play();
+
+        setTimeout(function() {
+            game.stop();
+        }, 6000);
+    </script>
+</body>
+</html>
